@@ -1,15 +1,17 @@
-package com.example.mobiledevprojectcasper
+package com.example.mobiledevprojectcasper.Database
 
-import android.provider.ContactsContract
 import androidx.lifecycle.LiveData
 import androidx.room.*
+import com.example.mobiledevprojectcasper.Database.Build
 
 @Dao
 interface BuildDao{
-    suspend fun insertBuild(build: Build)
 
     @Query("SELECT * FROM buildOverviewTable")
-    fun getBuild(): LiveData<List<Build>>
+    fun getBuild(): LiveData<Build?>
+
+    @Insert
+    suspend fun insertBuild(build: Build)
 
     @Update
     suspend fun updateBuild(build: Build)

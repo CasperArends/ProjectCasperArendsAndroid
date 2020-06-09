@@ -1,19 +1,34 @@
-package com.example.mobiledevprojectcasper
+package com.example.mobiledevprojectcasper.Database
 
 import android.os.Parcelable
 import androidx.annotation.DrawableRes
 import androidx.room.ColumnInfo
 import androidx.room.Entity
 import androidx.room.PrimaryKey
+import com.example.mobiledevprojectcasper.R
 import kotlinx.android.parcel.Parcelize
-import java.util.*
 
 @Parcelize
 @Entity(tableName = "buildOverviewTable")
 data class Build (
-    @PrimaryKey(autoGenerate = true)
-    @ColumnInfo(name = "id")
-    var id: Long? = null,
+
+    @ColumnInfo(name = "abilityRaigon")
+    @DrawableRes var ABILITIES_RAIGON: Int,
+
+    @ColumnInfo(name = "abilitychoice1")
+    var ability1: Int?,
+
+    @ColumnInfo(name = "abilitychoice2")
+    var ability2: Int?,
+
+    @ColumnInfo(name = "abilitychoice3")
+    var ability3: Int?,
+
+    @ColumnInfo(name = "abilitychoice4")
+    var ability4: Int?,
+
+    @ColumnInfo(name = "abilitychoice5")
+    var ability5: Int?,
 
     @ColumnInfo(name = "nameBuild")
     var name: String,
@@ -21,12 +36,14 @@ data class Build (
     @ColumnInfo(name = "abilityslots")
     var slot: Int = 5,
 
-    @ColumnInfo(name = "abilityRaigon")
-    @DrawableRes var ABILITIES_RAIGON: Int
+    @PrimaryKey(autoGenerate = true)
+    @ColumnInfo(name = "id")
+    var id: Long? = null
+
     ) : Parcelable {
     companion object{
         val BUILD_RAIGON = arrayOf(
-            R.drawable.Binding_Light_Ability,
+            R.drawable.Binding_Light,
             R.drawable.Headlong_Rush,
             R.drawable.Acrobatics,
             R.drawable.Hawk_Dive,
