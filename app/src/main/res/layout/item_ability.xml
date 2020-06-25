@@ -2,14 +2,20 @@
 <LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
     xmlns:app="http://schemas.android.com/apk/res-auto"
     xmlns:tools="http://schemas.android.com/tools"
-    android:layout_width="match_parent"
-    android:layout_height="match_parent">
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_weight="1"
+    tools:context=".ui.abilityselection.AbilitySelectionActivity">
 
 
-    <ImageView
-        android:id="@+id/ivAbility"
-        android:layout_width="wrap_content"
-        android:layout_height="503dp"
+    <ImageButton
+        android:id="@+id/ibAbilityButton"
+        style="@style/Widget.AppCompat.ImageButton"
+        android:layout_width="421dp"
+        android:layout_height="500dp"
         android:layout_weight="1"
-        tools:srcCompat="@drawable/Binding_Light" />
+        android:padding="10dp"
+        android:scaleType="fitCenter"
+        app:srcCompat="@drawable/acrobatics" />
+
 </LinearLayout>

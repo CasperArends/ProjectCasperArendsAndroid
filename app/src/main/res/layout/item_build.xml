@@ -11,7 +11,6 @@
         android:layout_width="407dp"
         android:layout_height="229dp"
         android:text="Build_Name"
-        android:background="<#18259e>"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent" />

@@ -4,7 +4,7 @@
     xmlns:tools="http://schemas.android.com/tools"
     android:layout_width="match_parent"
     android:layout_height="match_parent"
-    tools:context=".MainActivity">
+    tools:context=".ui.main.MainActivity">
 
     <ImageView
         android:id="@+id/ivJade"
@@ -16,7 +16,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.533"
-        app:srcCompat="@drawable/Jade_Logo"
+        app:srcCompat="@drawable/jade_logo"
         android:contentDescription="@string/todo" />
 
     <ImageView
@@ -29,7 +29,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.185"
-        app:srcCompat="@drawable/Raigon_Logo" />
+        app:srcCompat="@drawable/raigon_logo" />
 
     <ImageView
         android:id="@+id/ivAshka"
@@ -41,7 +41,7 @@
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="parent"
         app:layout_constraintVertical_bias="0.877"
-        app:srcCompat="@drawable/Ashka_Logo" />
+        app:srcCompat="@drawable/ashka_logo" />
 
     <TextView
         android:id="@+id/tvChampionPick"

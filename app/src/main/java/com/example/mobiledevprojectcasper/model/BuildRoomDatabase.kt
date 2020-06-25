@@ -1,12 +1,13 @@
-package com.example.mobiledevprojectcasper.Database
+package com.example.mobiledevprojectcasper.model
 
 import android.content.Context
 import androidx.room.Database
 import androidx.room.Room
 import androidx.room.RoomDatabase
 import androidx.room.TypeConverters
+import com.example.mobiledevprojectcasper.Database.Build
 
-@Database(entities = [Build::class], version = 1, exportSchema = false)
+@Database(entities = [Build::class], version = 4, exportSchema = false)
 @TypeConverters(Converters::class)
 
 abstract class BuildRoomDatabase : RoomDatabase(){
@@ -24,7 +25,9 @@ abstract class BuildRoomDatabase : RoomDatabase(){
             if (buildRoomDatabaseInstance == null){
                 synchronized(BuildRoomDatabase::class.java){
                     if (buildRoomDatabaseInstance == null){
-                        buildRoomDatabaseInstance = Room.databaseBuilder(context.applicationContext, BuildRoomDatabase::class.java, DATABASE_NAME).fallbackToDestructiveMigration().build()
+                        buildRoomDatabaseInstance = Room.databaseBuilder(context.applicationContext, BuildRoomDatabase::class.java,
+                            DATABASE_NAME
+                        ).fallbackToDestructiveMigration().build()
                     }
                 }
             }

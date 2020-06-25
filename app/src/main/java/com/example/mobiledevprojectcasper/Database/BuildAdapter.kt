@@ -24,7 +24,7 @@ public class BuildAdapter(private val build: List<Build>) : RecyclerView.Adapter
 
     inner class ViewHolder(itemView: View) : RecyclerView.ViewHolder(itemView){
         fun bind(build: Build){
-            itemView.ivAbility.setImageResource(build.ABILITIES_RAIGON)
+            itemView.ibAbilityButton.setImageResource(build.abilityCharacter!!)
         }
     }
 }

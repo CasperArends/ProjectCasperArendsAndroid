@@ -1,6 +1,5 @@
-package com.example.mobiledevprojectcasper.Database
+package com.example.mobiledevprojectcasper.model
 
-import android.media.Image
 import androidx.room.TypeConverter
 import java.util.*
 
@@ -20,9 +19,9 @@ class Converters {
 //    fun fromImage(value: Long?): Image?{
 //        return value?.let {  }
 //    }
-
+//
 //    @TypeConverter
-//    fun imageToImageStamp(image: Image?): Image?{
-//        return image?.to????
+//    fun imageToImageStamp(image: Image?): Long?{
+//        return image?.
 //    }
 }
